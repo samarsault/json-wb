@@ -1,25 +1,42 @@
 {
-  "name": "json",
+  "name": "json-wb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-popover": "^1.1.2",
+    "@radix-ui/react-scroll-area": "^1.2.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.1",
+    "@radix-ui/react-toast": "^1.2.2",
     "@types/node": "22.10.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.0.0",
     "eslint": "9.16.0",
     "eslint-config-next": "15.0.3",
+    "lucide-react": "^0.462.0",
     "next": "15.0.3",
     "postcss": "8.4.49",
+    "re-resizable": "^6.10.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-json-tree": "^0.19.0",
+    "tailwind-merge": "^2.5.5",
     "tailwindcss": "3.4.15",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.7.2"
   }
 }
